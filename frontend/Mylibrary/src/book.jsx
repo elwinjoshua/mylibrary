@@ -9,7 +9,7 @@ function Book() {
     const [book, setBook] = useState(null);
     
     useEffect(() => {
-        axios.get("http://localhost:3000/admin/book/" + bookId, {
+        axios.get("https://mylibrary-tznt.onrender.com/admin/book/" + bookId, {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("token")
@@ -53,7 +53,7 @@ function UpdateCard({book, setBook}) {
                 <TextField value={price} onChange={(e) => { setPrice(e.target.value)}} fullWidth={true} label="Price" variant="outlined" />
                 <Button variant="contained" 
                     onClick={async () => {
-                        axios.put("http://localhost:3000/admin/books/" + book._id, {
+                        axios.put("https://mylibrary-tznt.onrender.com/admin/books/" + book._id, {
                             title: title,
                             description: description,
                             imageLink: image,

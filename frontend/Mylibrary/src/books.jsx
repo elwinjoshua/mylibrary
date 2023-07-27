@@ -6,7 +6,7 @@ function Books() {
     const [books, setBooks] = useState([]);
     
     useEffect(() => {
-        fetch("http://localhost:3000/admin/books", {
+        fetch("https://mylibrary-tznt.onrender.com/admin/books", {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("token")

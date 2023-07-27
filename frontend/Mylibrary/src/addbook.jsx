@@ -19,7 +19,7 @@ function AddBook() {
                 <TextField style={{marginBottom: 10}} onChange={(e) => {setPrice(e.target.value)}} fullWidth={true} label="Price" variant="outlined" />
                 <Button size={"large"} variant="contained"
                     onClick={async () => {
-                        await axios.post("http://localhost:3000/admin/books", {
+                        await axios.post("https://mylibrary-tznt.onrender.com/admin/books", {
                                 title: title,
                                 description: description,
                                 imageLink: image,

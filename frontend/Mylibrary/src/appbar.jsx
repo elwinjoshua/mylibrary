@@ -8,7 +8,7 @@ function Appbar() {
     const [userEmail, setUserEmail] = useState(null);
 
     useEffect(() => {
-        fetch("http://localhost:3000/admin/me", {
+        fetch("https://mylibrary-tznt.onrender.com/admin/me", {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("token")
