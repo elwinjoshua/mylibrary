@@ -12,4 +12,4 @@
 
 ### You can access the my account with Username = elwin and Password = 123, or create a new Admin Account.
 
-(Click here to visit)[https://dreamy-cat-359dfc.netlify.app/]
+[Click here to visit](https://dreamy-cat-359dfc.netlify.app/)
