@@ -16,7 +16,7 @@ function Login() {
                 <TextField onChange={(e) => {setPassword(e.target.value)}} fullWidth={true} label="Password" variant="outlined" type={"password"}/>
                 <Button variant="contained"
                         onClick={async () => {
-                            const res = await axios.post("http://localhost:3000/admin/login", {
+                            const res = await axios.post("https://mylibrary-tznt.onrender.com/admin/login", {
                                 username: email,
                                 password: password
                             }, {
